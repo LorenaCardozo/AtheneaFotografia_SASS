@@ -1,0 +1,41 @@
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*******COMPONENTE - FOOTER *******/
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.contenedor-footer{
+    background-color: $colorPrincipal;
+}
+
+.footer-lista-menu {
+    li{
+        font-size: 1.5rem;
+    }
+}
+
+.contenedor-footer {
+    h4{
+        color: $colorBlanco;
+        font-size: 2rem;
+    }
+}
+
+
+/*******************************/
+/*MOBILE*/
+
+@media only screen and (max-width: 768px)
+{
+
+    /*footer*/
+
+    .lista-menu li {
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+
+}
+
+/**********************/
+
+
+

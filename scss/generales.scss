@@ -1,0 +1,96 @@
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/********** GENERAL ************/
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    background-image: url($imgFondo);
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 4rem;
+    text-shadow: 2px 2px 8px $colorH;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+h3 {
+    
+    font-size: 3rem;
+    text-shadow: 2px 2px 8px $colorH;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+p{
+    font-size: 1.8rem;
+    text-align: justify;
+    padding-top: 2rem;
+}
+
+
+a {
+    text-decoration: none;
+    color: $colorA;
+    &:hover{
+        text-decoration: none;
+        color: $colorAHover;
+    }
+}
+
+
+.row>*{
+    padding: 0px;
+    margin:0px
+}
+
+.w-90{
+    width: 90%;
+}
+
+.bg-blanco{
+    background-color: $colorBlanco;
+}
+
+/*******************************/
+/*MOBILE*/
+
+@media only screen and (max-width: 768px)
+{
+
+    .oculta{
+        display: none;
+    }
+
+    
+    h1 {
+        font-size: 3rem;
+    }
+    
+    h3 {
+        
+        font-size: 2rem;
+    }
+    
+    p{
+        font-size: 1.5rem;
+    }
+
+}
+
+/*******************************/
+
+

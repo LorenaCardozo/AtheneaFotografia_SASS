@@ -1,0 +1,86 @@
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/********PAGE - CONTACTO************/
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.contenedor-form{
+    margin-bottom: 10rem;
+    background-color: $colorBlanco;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.50);    
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.mapa{
+    height: 500px;
+    border:1px dotted $colorGris
+}
+
+.contenedor-check {
+    margin-bottom: 50px;
+    width: 80%;
+}
+
+.contenedor-check 
+    {label{
+        margin-left: 5px;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.contenedor-check {
+    input{
+        height: 20px;
+        width: 20px;
+        margin-left: 2rem;
+    }
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; 
+    border: 1px solid $colorGris;
+    font-size: 2rem;
+    resize: none; 
+}
+
+form {
+    label {
+    font-size: 1.5rem;
+    }
+}
+
+.button-enviar {
+    display: block;
+    background-color: $colorBoton;
+    font-size: 2em; 
+    color: 	$colorBlanco;
+}
+
+.button-enviar:hover{
+    background-color: $colorBotonHover;
+    cursor:pointer;
+}
+
+.form-label, .form-control, .form-check-label{font-size: 1.8rem;}
+.form-check-input{width: 2em;height: 2em;}
+
+/*******************************/
+/*MOBILE*/
+
+@media only screen and (max-width: 768px)
+{
+
+    .contenedor-contacto{
+        flex-direction: column;
+        }
+
+}
+
+/*******************************/

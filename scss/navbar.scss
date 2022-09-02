@@ -1,0 +1,38 @@
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/******COMPONENTE - NAV - BOOTSTRAP **********/
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+nav { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.nav-link {
+    text-decoration: none;
+    color: $colorA;
+    font-size: 1.5rem;
+    &:hover {
+        text-decoration: none;
+        color: $colorAHover;
+    }    
+}
+
+.nav-pills {
+    .nav-link.active{
+    background-color:$colorLinkActive;    
+    }
+}
+
+.navbar-dark {
+    .navbar-toggler{
+        color: $colorPrincipal;
+        border-color: $colorBorde;
+    }
+}
+
+.navbar-collapse{justify-content: center;}
+
+
