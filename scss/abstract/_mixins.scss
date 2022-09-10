@@ -1,0 +1,12 @@
+
+/************ MIXINS ************************/
+
+@mixin mixSeccion ($width, $direction)
+{
+    width: $width;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: $direction;
+}
+

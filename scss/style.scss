@@ -1,8 +1,9 @@
-@import "colores";
-@import "generales";
-@import "navbar";
-@import "footer";
-@import "index";
-@import "galerias";
-@import "contacto";
-@import "secciones";
+@import "./abstract/variables";
+@import "./abstract/mixins";
+@import "./base/generales";
+@import "./layout/navbar";
+@import "./layout/footer";
+@import "./pages/index";
+@import "./components/galerias";
+@import "./pages/contacto";
+@import "./components/secciones";

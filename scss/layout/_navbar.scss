@@ -12,24 +12,24 @@ nav {
 
 .nav-link {
     text-decoration: none;
-    color: $colorA;
+    color: map-get($colores, colorA);
     font-size: 1.5rem;
     &:hover {
         text-decoration: none;
-        color: $colorAHover;
+        color: map-get($colores, colorAHover);
     }    
 }
 
 .nav-pills {
     .nav-link.active{
-    background-color:$colorLinkActive;    
+    background-color:map-get($colores, colorLinkActive);    
     }
 }
 
 .navbar-dark {
     .navbar-toggler{
-        color: $colorPrincipal;
-        border-color: $colorBorde;
+        color: map-get($colores, colorPrincipal);
+        border-color: map-get($colores, colorBorde);
     }
 }
 

@@ -5,7 +5,7 @@
 
 .contenedor-form{
     margin-bottom: 10rem;
-    background-color: $colorBlanco;
+    background-color: map-get($colores, colorBlanco);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.50);    
@@ -16,28 +16,24 @@
 
 .mapa{
     height: 500px;
-    border:1px dotted $colorGris
+    border:1px dotted map-get($colores, colorGris)
 }
 
 .contenedor-check {
     margin-bottom: 50px;
     width: 80%;
-}
 
-.contenedor-check 
-    {label{
-        margin-left: 5px;
-        display: flex;
-        flex-direction: row;
-    }
-}
-
-.contenedor-check {
     input{
         height: 20px;
         width: 20px;
         margin-left: 2rem;
     }
+
+    label{
+        margin-left: 5px;
+        display: flex;
+        flex-direction: row;
+    }    
 }
 
 form input, form textarea {
@@ -45,28 +41,26 @@ form input, form textarea {
     width: 100%;
     padding: 10px;
     box-sizing: border-box; 
-    border: 1px solid $colorGris;
-    font-size: 2rem;
+    border: 1px solid map-get($colores, colorGris);
+    font-size: $sizeSmall;
     resize: none; 
 }
 
 form {
     label {
-    font-size: 1.5rem;
+    font-size: $sizeSmall;
     }
 }
 
 .button-enviar {
     display: block;
-    background-color: $colorBoton;
+    background-color: map-get($colores, colorBoton);
     font-size: 2em; 
-    color: 	$colorBlanco;
+    color: 	map-get($colores, colorBlanco);
+    &:hover{    background-color: map-get($colores, colorBotonHover);
+                cursor:pointer;}
 }
 
-.button-enviar:hover{
-    background-color: $colorBotonHover;
-    cursor:pointer;
-}
 
 .form-label, .form-control, .form-check-label{font-size: 1.8rem;}
 .form-check-input{width: 2em;height: 2em;}

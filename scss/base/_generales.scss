@@ -16,27 +16,28 @@ html {
 body {
     background-image: url($imgFondo);
     margin: 0;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 1rem;
+    font-family: $font;
+    font-size: $sizeDefault;
+}
+
+.texto {
+    text-shadow: 2px 2px 8px map-get($colores, colorH);
+    margin-top: 4rem;
+    margin-bottom: 4rem;        
 }
 
 h1 {
-    font-size: 4rem;
-    text-shadow: 2px 2px 8px $colorH;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    @extend .texto;
+    font-size: $sizeLarge;  
 }
 
 h3 {
-    
-    font-size: 3rem;
-    text-shadow: 2px 2px 8px $colorH;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    @extend .texto;
+    font-size: $sizeMedium;
 }
 
 p{
-    font-size: 1.8rem;
+    font-size: $sizeSmall;
     text-align: justify;
     padding-top: 2rem;
 }
@@ -44,10 +45,10 @@ p{
 
 a {
     text-decoration: none;
-    color: $colorA;
+    color: map-get($colores, colorA);
     &:hover{
         text-decoration: none;
-        color: $colorAHover;
+        color: map-get($colores, colorAHover);
     }
 }
 
@@ -62,7 +63,7 @@ a {
 }
 
 .bg-blanco{
-    background-color: $colorBlanco;
+    background-color: map-get($colores, colorBlanco);
 }
 
 /*******************************/
@@ -77,16 +78,16 @@ a {
 
     
     h1 {
-        font-size: 3rem;
+        font-size: $mobileSizeLarge;
     }
     
     h3 {
         
-        font-size: 2rem;
+        font-size: $mobileSizeMedium;
     }
     
     p{
-        font-size: 1.5rem;
+        font-size: $mobileSizeSmall;
     }
 
 }

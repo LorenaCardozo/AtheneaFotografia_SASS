@@ -10,48 +10,44 @@
     width: 95%;
     border-radius: 8px;
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.50);
-    font-size: 1rem;
+    font-size: $sizeDefault;
     margin:0 auto;
     margin-bottom: 60px;
     margin-top: 30px;
-}
-
-.contenedor-seccion {
     p{
-        font-size: 2em;
+        font-size: $sizeSmall;
         text-align: justify;
         padding-top: 2rem;
-    }
+    }    
+}
+
+@mixin mixSeccion ($width, $direction)
+{
+    width: $width;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: $direction;
 }
 
 .seccion-imagen{
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include mixSeccion(30%, 'row');
 }
 
 .seccion-texto{
-    width: 60%;
+    @include mixSeccion(60%, 'column');
     padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;    
-}
-
-.seccion-texto {
     p{
-        font-size: 2em;
+        font-size: $sizeSmall;
         text-align: justify;
         padding-top: 2rem;
-    }
+    }      
 }
 
 .seccion-img{
     border-radius: 8px;
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.50);
-    width: 93%;
+    width: 95%;
     margin: 1rem;
 }
 
@@ -62,7 +58,7 @@
     width: 95%;
     border-radius: none;
     box-shadow: none;
-    font-size: 1rem;
+    font-size: $sizeDefault;
 }
 
 /*****CARD - BOOTSTRAP*****/

@@ -1,0 +1,30 @@
+// variables generales del sitio
+
+// MAP - colores
+$colores: (
+    colorFooter:rgb(143, 97, 135),
+    colorH:#661e1e,
+    colorA: whitesmoke,
+    colorAHover:palevioletred,
+    colorGris:grey,
+    colorBlanco:white,
+    colorBoton:#9e5981,
+    colorBotonHover:#a7639b,
+    colorLinkActive:blueviolet,
+    colorPrincipal:rgb(143, 97, 135),
+    colorBorde: dimgrey
+); 
+
+$imgFondo:'../assets/img/fondo.webp';
+$font: "Roboto Mono", monospace;
+$sizeLarge: 4rem;
+$sizeMedium: 3rem;
+$sizeSmall:1.8rem;
+$sizeXSmall:1.5rem;
+$sizeDefault: 1rem;
+
+$mobileSizeLarge:3rem;
+$mobileSizeMedium:2rem;
+$mobileSizeSmall:1.5rem;
+
+
