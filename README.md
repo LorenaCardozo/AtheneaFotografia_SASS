@@ -1,6 +1,14 @@
-# AtheneaFotografia_SASS
-Desafio SASS II + SEO
+# AtheneaFotografia
+Proyecto Final - Fotografia Athenea
 -----------------------------------
+
+Sitio para estudio de fotografía, constituida por 5 páginas: home, servicios, quienes somos, Nuestro trabajo y Contacto.
+
+Se utilizó 
+* bootstrap
+* google fonts
+* Animaciones AOS
+* sass y nodemom
 
 SEO:
 
